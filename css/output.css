@@ -7,17 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-600: oklch(44.6% 0.03 256.802);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-4xl: 56rem;
-    --container-6xl: 72rem;
     --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -291,14 +287,14 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
   }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
@@ -342,6 +338,16 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  .sm\:py-10 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:pt-10 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
   .md\:ml-6 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 6);
@@ -364,7 +370,7 @@
     min-height: 100%;
     flex-direction: column;
     overflow-x: hidden;
-    color: var(--color-gray-700);
+    color: var(--color-gray-800);
   }
   h1, h2, h3, h4, h5, h6 {
     --tw-font-weight: var(--font-weight-bold);
@@ -396,7 +402,7 @@
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   section h2 {
-    margin-bottom: calc(var(--spacing) * 1);
+    margin-bottom: calc(var(--spacing) * 1.5);
   }
 }
 @property --tw-rotate-x {
